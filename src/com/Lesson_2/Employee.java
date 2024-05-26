@@ -8,7 +8,6 @@ public class Employee {
     private double salary;
     private int age;
 
-    // Конструктор класса
     public Employee(String fullName, String jobTitle, String email, String phoneNumber, double salary, int age) {
         this.fullName = fullName;
         this.jobTitle = jobTitle;
@@ -18,14 +17,12 @@ public class Employee {
         this.age = age;
     }
 
-    // Метод для вывода информации об объекте в консоль
     public void displayInfo() {
-        System.out.println("fullName: " + fullName);
-        System.out.println("jobTitle: " + jobTitle);
-        System.out.println("email: " + email);
-        System.out.println("phoneNumber: " + phoneNumber);
-        System.out.println("salary: " + salary);
-        System.out.println("age: " + age);
+        System.out.println("Full Name: " + fullName);
+        System.out.println("Job Title: " + jobTitle);
+        System.out.println("Email: " + email);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Salary: " + salary);
+        System.out.println("Age: " + age);
     }
 }
-

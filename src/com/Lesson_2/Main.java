@@ -1,33 +1,17 @@
 package com.Lesson_2;
+
 public class Main {
-    private String fullName;
-    private String jobTitle;
-    private String email;
-    private String phoneNumber;
-    private double salary;
-    private int age;
-
-    // Конструктор класса
-    public void Employee(String fullName, String jobTitle, String email, String phoneNumber, double salary, int age) {
-        this.fullName = fullName;
-        this.jobTitle = jobTitle;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.salary = salary;
-        this.age = age;
-    }
-
-    // Метод для вывода информации об объекте в консоль
-    public void displayInfo() {
-        System.out.println("fullName: " + fullName);
-        System.out.println("jobTitle: " + jobTitle);
-        System.out.println("email: " + email);
-        System.out.println("phoneNumber: " + phoneNumber);
-        System.out.println("salary: " + salary);
-        System.out.println("age: " + age);
-    }
     public static void main(String[] args) {
-        Employee employee = new Employee("Anna Swan", "Software Engineer", "Swan@example.com", "123-456-7890", 75000.0, 36);
-        employee.displayInfo();
+        Employee[] employees = new Employee[5];
+        employees[0] = new Employee("John Smith", "Developer", "john.smith@example.com", "1234567890", 60000, 35);
+        employees[1] = new Employee("Jane Smith", "Manager", "jane.smith@example.com", "0987654321", 75000, 35);
+        employees[2] = new Employee("Alice Johnson", "Designer", "alice.johnson@example.com", "1122334455", 55000, 28);
+        employees[3] = new Employee("Bob Johnson", "Analyst", "bob.johnson@example.com", "5566778899", 65000, 30);
+        employees[4] = new Employee("Charlie Brown", "Engineer", "charlie.brown@example.com", "9988776655", 70000, 32);
+
+        for (Employee employee : employees) {
+            employee.displayInfo();
+            System.out.println("------------------------");
+        }
     }
 }
